@@ -1,6 +1,6 @@
 import unittest
 
-from mathutils import add, subtract, multiply
+from mathutils import add, subtract, multiply, divide
 
 
 class TestMathUtils(unittest.TestCase):
@@ -12,6 +12,13 @@ class TestMathUtils(unittest.TestCase):
 
     def test_multiply(self):
         self.assertEqual(multiply(4, 3), 12)
+
+    def test_divide(self):
+        self.assertEqual(divide(10, 2), 5.0)
+
+    def test_divide_by_zero_raises(self):
+        with self.assertRaises(ZeroDivisionError):
+            divide(1, 0)
 
 
 if __name__ == "__main__":

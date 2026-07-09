@@ -13,7 +13,7 @@ multiply(4, 3)  # 12
 divide(10, 2)   # 5.0
 ```
 
-## Runing Tests
+## Running Tests
 
 ```bash
 python -m unittest discover tests
